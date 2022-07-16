@@ -26,17 +26,28 @@ body {
     width: 30px;
     height: 30px;
     background: #4fc3dc;
-    margin: 0 4px;
+    margin: 0 1px;
     border-radius: 50%;
     box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
     animation: animate 15s linear infinite;
     animation-duration: calc(125s / var(--i));
 }
 
-.bubbles span:nth-child(even) {
-    background: #ff2d75;
-    box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+.bubbles span:nth-child(2n+0) {
+    background: #aeff2d;
+    box-shadow: 0 0 0 10px #b1c92dd8, 0 0 50px #96df0ec4, 0 0 100px #9be90bea;
 }
+
+.bubbles span:nth-child(2n+1) {
+    background: red;
+    box-shadow: 0 0 0 10px #b1c92dd8, 0 0 50px #96df0ec4, 0 0 100px #9be90bea;
+}
+
+.bubbles span:nth-child(2n+2) {
+    background: green;
+    box-shadow: 0 0 0 10px #b1c92dd8, 0 0 50px #96df0ec4, 0 0 100px #9be90bea;
+}
+
 
 @keyframes animate {
     0% {

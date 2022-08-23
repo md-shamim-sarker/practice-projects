@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>The 5 greatest footballers</title>
+</head>
+
+<body>
+    <!-- Header Part Start -->
+    <header>
+        <div>
+            <h1>The 5 greatest footballers</h1>
+            <p>This list is not just the 'Top 5 Greatest Footballers of All Time', it's a ranking of the highest peaks
+                each of these
+                'Greatest Footballers of All Time' reached.</p>
+        </div>
+        <img src="./images/banner-1.png" alt="" id="banner-1">
+        <img src="./images/banner-3.png" alt="" id="banner-3">
+        <img src="./images/banner-curve.png" alt="" id="banner-curve">
+        <img src="./images/banner-football.png" alt="" id="banner-football">
+        <img src="./images/banner-2.png" alt="" id="banner-2">
+    </header>
+    <!-- Header Part End -->
+
+    <!-- Main Part Start -->
+    <main>
+        <div class="left-side">
+            <!-- Player card 1 -->
+            <div class="player-card">
+                <div class="image">
+                    <img src="./images/messi.png" alt="messi">
+                </div>
+                <div class="text">
+                    <h2>Lionel Messi</h2>
+                    <p>36 Goal | 120 Assist</p>
+                    <button onclick="playerSelectFunction(this)">Select</button>
+                </div>
+            </div>
+            <!-- Player card 2 -->
+            <div class="player-card">
+                <div class="image">
+                    <img src="./images/neymar.png" alt="messi">
+                </div>
+                <div class="text">
+                    <h2>Neymar Jr</h2>
+                    <p>36 Goal | 120 Assist</p>
+                    <button onclick="playerSelectFunction(this)">Select</button>
+                </div>
+            </div>
+            <!-- Player card 3 -->
+            <div class="player-card">
+                <div class="image">
+                    <img src="./images/kylian.png" alt="messi">
+                </div>
+                <div class="text">
+                    <h2>Kylian Mbappe</h2>
+                    <p>36 Goal | 120 Assist</p>
+                    <button onclick="playerSelectFunction(this)">Select</button>
+                </div>
+            </div>
+            <!-- Player card 4 -->
+            <div class="player-card">
+                <div class="image">
+                    <img src="./images/vitor.png" alt="messi">
+                </div>
+                <div class="text">
+                    <h2>Vitor Machado</h2>
+                    <p>36 Goal | 120 Assist</p>
+                    <button onclick="playerSelectFunction(this)">Select</button>
+                </div>
+            </div>
+            <!-- Player card 5 -->
+            <div class="player-card">
+                <div class="image">
+                    <img src="./images/sergio.png" alt="messi">
+                </div>
+                <div class="text">
+                    <h2>Sergio Ramos</h2>
+                    <p>36 Goal | 120 Assist</p>
+                    <button onclick="playerSelectFunction(this)">Select</button>
+                </div>
+            </div>
+            <!-- Player card 6 -->
+            <div class="player-card">
+                <div class="image">
+                    <img src="./images/renato.png" alt="messi">
+                </div>
+                <div class="text">
+                    <h2>Renato Sanches</h2>
+                    <p>36 Goal | 120 Assist</p>
+                    <button onclick="playerSelectFunction(this)">Select</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="js-card card-1">
+                <h2>Selected Five</h2>
+                <ol></ol>
+            </div>
+
+            <div class="js-card">
+                <h2>Budget</h2>
+
+                <h4>Per Player</h4>
+                <div>
+                    <input type="text" name="" id="per-player">
+                </div>
+                <button id="cal-btn">Calculate</button>
+                <h3>Player Expenses $ <span id="player-expenses">000</span></h3>
+                <h4>Manager</h4>
+                <div>
+                    <input type="text" name="" id="manager">
+                </div>
+                <h4>Coach</h4>
+                <div>
+                    <input type="text" name="" id="coach">
+                </div>
+                <button id="cal-total-btn">Calculate Total</button>
+                <h3>Total $ <span id="total">000</span></h3>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <!-- Main Part End -->
+
+    <!-- Footer Part Start -->
+    <footer>
+        <p>Copyright &copy; | All Rights Reserved | 2022</p>
+    </footer>
+    <!-- Footer Part End -->
+
+    <!-- Script Link Start-->
+    <script src="./js/common.js"></script>
+    <script src="./js/calculation.js"></script>
+    <!-- Script Link End-->
+</body>
+
+</html>
